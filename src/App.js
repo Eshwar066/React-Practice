@@ -26,8 +26,10 @@ import Counter1 from "./Components/useReducer/Main";
 import MemoizedAdder from "./demo/MemoizedAdder/Memo";
 import Password from "./demo/Random-password-Generator/Password";
 
+
+import MachineCoding from "./MachineCoding.js";
 // const EnhancedCounter = withCount(Counter);
-// export const MyContext = createContext({});
+export const MyContext = createContext({});
 
 function App() {
   // const [backgroundColor, setbackgroundColor] = useState("red");
@@ -59,7 +61,10 @@ function App() {
       {/* <HooksContext /> */}
       {/* <Counter1 /> */}
       {/* <MemoizedAdder /> */}
-      <Password />
+      {/* <Password /> */}
+
+      
+      <MachineCoding/>
     </div>
   );
 }
