@@ -5,19 +5,16 @@ import FileExplorer from "./fileExplorer";
 const FileEplorerMain=()=>{
     const [explorerData,setExplorerData]= useState(fileData);
 
-    console.log(">>explorerData",explorerData);
-    
-
+    //recursion
     const addItem = (currentFolder, parentId, newItem) => {
         if (currentFolder.id === parentId) {
-            // Found the folder where we need to insert the new item
+            
             return {
                 ...currentFolder,
                 items: [...currentFolder.items, newItem],
             };
         }
-    
-        // If not found, check inside each subfolder (recursive search)
+
         return {
             ...currentFolder,
             items: currentFolder.items.map((item) =>
@@ -29,7 +26,7 @@ const FileEplorerMain=()=>{
     const handleSubmit = (value, isFolder, parentId) => {
         setExplorerData((prevData) =>
             addItem(prevData, parentId, {
-                id: Date.now(), // Generate a unique ID
+                id: Date.now(),
                 fileName: value,
                 isFolder,
                 items: [],
