@@ -2,6 +2,8 @@ import Accordian from "./MachineCodingQues/Accordian/accordian"
 import Carousel from "./MachineCodingQues/CarosuelUi/carosuel"
 import FileEplorerMain from "./MachineCodingQues/FileExplorerCode/fileExplorerMain"
 import Progressbar from "./MachineCodingQues/ProgressBar/progressbar"
+import ToastMessage from "./MachineCodingQues/ToastMessage/components/toastMsg"
+import GenericToast from "./MachineCodingQues/ToastMessage/hooks/use-notification"
 
 const MachineCoding=()=>{
 
@@ -11,7 +13,8 @@ const MachineCoding=()=>{
     {/* <Carousel/> */}
     {/* <FileEplorerMain/> */}
     {/* <Progressbar/> */}
-    <Accordian/>
+    {/* <Accordian/> */}
+  <GenericToast/>
     </>
     )
 }

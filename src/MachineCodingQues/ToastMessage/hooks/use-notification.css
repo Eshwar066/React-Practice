@@ -1,0 +1,11 @@
+.btn-container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: auto;
+    background-color: aquamarine;
+    border: 1px solid black;
+    color: antiquewhite;
+    width: 30%;
+
+}

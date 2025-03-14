@@ -1,0 +1,13 @@
+.toastmsg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid black;
+    border-radius: 5px;
+background-color: grey;
+width: 30%;
+padding-top: 20px;
+padding-bottom: 20px;
+margin-top: 20px;
+margin-bottom: 20px;
+}
